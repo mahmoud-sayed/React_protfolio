@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
  
-export const CreativeSection=styled.div`
+export const CreativeSection = styled.div`
     height: 500px;
     background: url('images/about/about-bg.jpg');
     background-size: cover;
@@ -10,7 +10,6 @@ export const CreativeSection=styled.div`
 `
 
 export const CreativeInfo = styled.div`
-    
     width: 50%;
     float: right;
 `

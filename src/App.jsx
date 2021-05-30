@@ -1,20 +1,22 @@
-import React, {Component}from 'react';
-import { BrowserRouter , Route} from 'react-router-dom';
-import Navbar from './components/navbar/index';
-import Index from './components/index/index';
-import Contact from './components/contact/index';
+import React from 'react';
+import { BrowserRouter , Route, Switch} from 'react-router-dom';
+import Navbar from './components/navbar/index.jsx';
+import Index from './components/index/index.jsx';
+import Contact from './components/contact/index.jsx';
 
 
-class App extends Component{
-    render(){
+const App = () => {
+        console.log('1')
         return(
-                <BrowserRouter>
+            <BrowserRouter>
                     <Navbar/>
-                    <Route exact path="/" component={Index} />
+                <Switch>
+                <Route exact path="/" component={Index} />
                     <Route path="/contact" component={Contact} />
+                </Switch>
+
                 </BrowserRouter>
         )
-    };
 };
 
 export default App;
